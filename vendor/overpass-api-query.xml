@@ -2,7 +2,7 @@
 	<union>
 		<query type="way">
 			<has-kv k="building" v="yes"/>
-			<bbox-query {{bbox}}/>
+      		<bbox-query e="23.692188262939453" n="46.82108965549565" s="46.714208635848365" w="23.511085510253906"/>
 		</query>
 		<item />
 		<recurse type="way-node"/>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title>buildings</title>
+	<style type="text/css">
+		#map {
+			position:absolute;
+			top:0; bottom: 0; right: 0; left: 0;
+		}
+	</style>
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+	<script type="text/javascript" src="../street-names/js/lib/leaflet.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+	<div id='map'></div>
+
+	<script type="text/javascript">
+
+	var map = L.map('map',{
+		maxBounds: [[46.6412301,23.4324747],[46.9201137,23.8047838]]
+	})
+	.fitBounds([[46.7412301, 23.53816],[46.76813, 23.59253]]);
+
+	var AltTiles = 'http://b.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png';
+	var StamenTiles = 'http://a.tile.stamen.com/toner-lite/{z}/{x}/{y}.png';
+	L.tileLayer(AltTiles).addTo(map);
+
+	d3.json('temp-data/pins.json', function(data) {
+		L.geoJson(data.features, {
+			onEachFeature: function(feature, layer) {
+				layer.on('click', function() {
+					console.log(layer.feature.properties);
+				});
+			}
+		}).addTo(map);
+	});
+
+	d3.json('json/buildings.json', function(data) {
+		L.geoJson(data.features, {
+			onEachFeature: function(feature, layer) {
+				layer.on('click', function() {
+					console.log(layer.feature.properties);
+				});
+			}
+		}).addTo(map);
+	});
+
+	</script>
+
+</body>
+</html>
