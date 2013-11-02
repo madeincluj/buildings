@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "id": "way/108068969",
-        "name": "Casa de Cultură a Studenților"
+        "name": "Casa de cultură a studenților"
       },
       "geometry": {
         "type": "Polygon",
@@ -91,7 +91,7 @@
       "type": "Feature",
       "properties": {
         "id": "way/154946207",
-        "name": "Central"
+        "name": "Magazin Central"
       },
       "geometry": {
         "type": "Polygon",
@@ -140,7 +140,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "way/155045033"
+        "id": "way/155045033",
+        "name": "Piața agroalimentară"
       },
       "geometry": {
         "type": "Polygon",
@@ -265,7 +266,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "way/174534305"
+        "id": "way/174534305",
+        "name": "Complex Republica"
       },
       "geometry": {
         "type": "Polygon",
@@ -460,7 +462,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "way/226258489"
+        "id": "way/226258489",
+        "name": "Institutul de proiectare"
       },
       "geometry": {
         "type": "Polygon",
@@ -510,7 +513,7 @@
       "type": "Feature",
       "properties": {
         "id": "way/227338615",
-        "name": "Palatul Telefoanelor"
+        "name": "Palatul telefoanelor"
       },
       "geometry": {
         "type": "Polygon",
@@ -544,7 +547,7 @@
       "type": "Feature",
       "properties": {
         "id": "way/236828685",
-        "name": "Grand Hotel Napoca"
+        "name": "Hotel Napoca"
       },
       "geometry": {
         "type": "Polygon",
@@ -577,7 +580,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "way/243261484"
+        "id": "way/243261484",
+        "name": "Liceul George Coșbuc"
       },
       "geometry": {
         "type": "Polygon",
@@ -711,7 +715,7 @@
       "type": "Feature",
       "properties": {
         "id": "way/244018143",
-        "name": "Facultatea de Construcții"
+        "name": "Facultatea de construcții"
       },
       "geometry": {
         "type": "Polygon",
@@ -821,7 +825,7 @@
       "type": "Feature",
       "properties": {
         "id": "way/244018149",
-        "name": "Casa de Modă"
+        "name": "Casa de modă"
       },
       "geometry": {
         "type": "Polygon",
